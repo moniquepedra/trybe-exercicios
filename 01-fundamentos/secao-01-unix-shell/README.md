@@ -1,1 +1,0 @@
-# Seção 01 Unix e Shell

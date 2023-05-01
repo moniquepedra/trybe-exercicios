@@ -1,0 +1,11 @@
+h1, p, ol, ul {
+    text-align: center;
+}
+ul:hover, ol:hover {
+    background-color:yellow;
+}
+li:active{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+li{list-style:none}

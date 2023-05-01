@@ -6,6 +6,6 @@ ul:hover, ol:hover {
 }
 li:active{
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 20px;
 }
 li{list-style:none}

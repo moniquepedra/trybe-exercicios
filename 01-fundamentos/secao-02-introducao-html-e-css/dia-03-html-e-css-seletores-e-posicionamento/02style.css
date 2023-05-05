@@ -1,11 +1,13 @@
-h1, p, ol, ul {
+h1, p, li {
     text-align: center;
 }
-ul:hover, ol:hover {
-    background-color:yellow;
+li:hover {
+    background-color: yellow;
 }
-li:active{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+li:active {
+    font-family: monospace;
 }
-li{list-style:none}
+
+li {
+    list-style: none;
+}

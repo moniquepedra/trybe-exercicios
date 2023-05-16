@@ -11,6 +11,10 @@ let leitor = {
     ],
   };
 
-  console.log( 'O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama "' + leitor.livrosFavoritos[0].titulo + '."'); 
+  console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama "' + leitor.livrosFavoritos[0].titulo + '."'); 
   
-  //não esquecer der colocar o índice para aceesa o item do array
+  //não esquecer de colocar o índice para acessar o item do array
+
+  leitor.livrosFavoritos.push({titulo:'Harry Potter e o Prisioneiro de Azkaban', autor: 'JK Rowling', editora: 'Rocco'});
+
+  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.') //lembrar da propriedade .length para acessar a array inteira

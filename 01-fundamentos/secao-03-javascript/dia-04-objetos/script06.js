@@ -17,4 +17,8 @@ let leitor = {
 
   leitor.livrosFavoritos.push({titulo:'Harry Potter e o Prisioneiro de Azkaban', autor: 'JK Rowling', editora: 'Rocco'});
 
-  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.') //lembrar da propriedade .length para acessar a array inteira
+  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.') 
+  //lembrar da propriedade .length para acessar a array inteira
+
+  console.log(leitor);
+  

@@ -63,10 +63,10 @@
 
     const mainContent = document.createElement('main');
     mainContent.className = 'main-content';
-    document.body.appendChild(mainContent);
+    document.body.appendChild(mainContent); // ou body.appendChild
 
     const centerContent = document.createElement('section');
-    centerContent.className = 'center-content';
+    centerContent.className = 'center-content'; // centerContent.classList.add('center-content');
     mainContent.appendChild(centerContent);
 
     const paragraph = document.createElement('p');
@@ -74,7 +74,7 @@
     centerContent.appendChild(paragraph);
 
     const leftContent = document.createElement('section');
-    leftContent.className = 'left-content';
+    leftContent.className = 'left-content'; 
     mainContent.appendChild(leftContent);
 
     const rightContent = document.createElement('section');
@@ -82,8 +82,8 @@
     mainContent.appendChild(rightContent);
 
     const img = document.createElement('img');
-    img.src = 'https://picsum.photos/200';
-    img.className ='small-image';
+    img.src = 'https://picsum.photos/200'; //img.setAttribute('src', 'https://picsum.photos/200');
+    img.className ='small-image'; //img.setAttribute('class', 'small-image');
     leftContent.appendChild(img);
 
     const ul = document.createElement('ul');
@@ -112,27 +112,33 @@
     const title = document.querySelector('h1');
     title.className = 'title';
 
+    const h3 = document.querySelectorAll('h3');
+    for (let index = 0; index < h3.length; index +=1) {
+      h3[index].className ='description';
+      
+    }
+
     //solução gabarito
     // Adicione a classe description nas 3 tags h3 criadas;
-    const h3 = document.getElementsByTagName('h3');
+    /*const h3 = document.getElementsByTagName('h3');
     for (let index = 0; index < 3; index += 1) {
       h3[index].className = 'description';
-    }
+    } */
 
     // Remova a `section` criada no passo 5 (aquela que possui a classe `left-content`) por meio da função `.removeChild()`;
     const sectionLeftContent = document.getElementsByClassName('left-content')[0]; 
     mainContent.removeChild(sectionLeftContent);
 
     // Centralize a `section` criada no passo 6 (aquela que possui a classe `right-content`). Dica: para centralizar, basta configurar o `margin-right: auto` da `section`.
-    const sectionRightContent = document.getElementsByClassName('right-content')[0];
+    const sectionRightContent = document.querySelector('right-content');
     sectionRightContent.style.marginRight = 'auto';
 
-     // Troque a cor de fundo do elemento-pai da `section` criada no passo 3 (aquela que possui a classe `center-content`) para a cor verde;
-     const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+    // Troque a cor de fundo do elemento-pai da `section` criada no passo 3 (aquela que possui a classe `center-content`) para a cor verde;
+    const sectionCenterContent = document.getElementsByClassName('center-content')[0];
     sectionCenterContent.parentNode.style.backgroundColor = 'green';
 
-     // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
-     ul.lastChild.remove();
+    // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+    ul.lastChild.remove();
     ul.lastChild.remove();
 
     </script>
